@@ -1,0 +1,85 @@
+name: Build VCF and Create Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'spam_numbers.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Generate VCF file
+        run: |
+          python generate_vcf.py
+          echo "VCF file generated successfully"
+      
+      - name: Get spam count
+        id: count
+        run: |
+          COUNT=$(grep -v '^#' spam_numbers.txt | grep -v '^$' | wc -l)
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+          echo "Found $COUNT spam numbers"
+      
+      - name: Get current date
+        id: date
+        run: |
+          echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+      
+      - name: Create or update release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.date.outputs.date }}
+          name: OpenBlockBG - ${{ steps.date.outputs.date }}
+          body: |
+            ## 📥 Download Blocklist
+            
+            **${{ steps.count.outputs.count }} spam numbers** as of ${{ steps.date.outputs.date }}
+            
+            ### How to use:
+            1. Download `blocked_contacts.vcf` below
+            2. Import to your phone's contacts
+            3. Block the "OpenBlockBG" contact
+            
+            ### iPhone:
+            Settings → Phone → Blocked Contacts → Add contact
+            
+            ### Android:
+            Phone → Settings → Blocked Numbers → Add contact
+            
+            ---
+            
+            🇧🇬 [Прочети на Български](https://github.com/${{ github.repository }}/blob/main/README.bg.md)
+          files: |
+            blocked_contacts.vcf
+            spam_numbers.txt
+          draft: false
+          prerelease: false
+          make_latest: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Commit updated VCF to repository
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add blocked_contacts.vcf
+          git diff --staged --quiet || git commit -m "🤖 Auto-update blocked_contacts.vcf - ${{ steps.count.outputs.count }} numbers"
+          git push
