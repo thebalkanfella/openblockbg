@@ -7,19 +7,23 @@
 
 This project maintains a community-driven list of spam and scam phone numbers that can be imported into smartphones for blocking unwanted calls.
 
-[Прочети на Български / Read in Bulgarian](README.bg.md)
+## 📥 Download
+
+**[⬇️ Download blocked_contacts.vcf](blocked_contacts.vcf)**
+
+Import this file to your phone to block all spam numbers in the list.
 
 ## Quick start
 
 ### Import to iPhone
-1. Download `blocked_contacts.vcf`
+1. Download [`blocked_contacts.vcf`](blocked_contacts.vcf)
 2. Open the file on your iPhone
 3. Tap "Add Contact"
 4. Go to Settings → Phone → Blocked Contacts
 5. Add the "OpenBlockBG" contact to blocked list
 
 ### Import to Android
-1. Download `blocked_contacts.vcf`
+1. Download [`blocked_contacts.vcf`](blocked_contacts.vcf)
 2. Open Contacts app
 3. Menu → Import
 4. Select the VCF file
@@ -37,9 +41,9 @@ This project maintains a community-driven list of spam and scam phone numbers th
 
 ## Files
 
-- `spam_numbers.txt` - Plain text list of spam phone numbers
-- `blocked_contacts.vcf` - VCF file ready for import
-- `generate_vcf.py` - Script to generate VCF from the number list
+- [`spam_numbers.txt`](spam_numbers.txt) - Plain text list of spam phone numbers
+- [`blocked_contacts.vcf`](blocked_contacts.vcf) - VCF file ready for import
+- [`generate_vcf.py`](generate_vcf.py) - Script to generate VCF from the number list
 
 ## Format
 
