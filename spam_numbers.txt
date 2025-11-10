@@ -10,7 +10,7 @@
 
 # Example spam number (fake number for demonstration)
 029034100 # Fake scam 
-+35924963324
++35924963324 # Survey spam
 +35924374737
 +359896610426
 +35924373532
@@ -23,3 +23,4 @@
 +34951748372
 +35924373926
 +35929034100
++359886310285 # Health events invites
