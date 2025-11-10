@@ -1,6 +1,6 @@
-# Contributing to Bulgarian Spam Numbers
+# Contributing to OpenBlockBG
 
-Thank you for helping protect people from spam calls! 
+Thank you for helping protect people from spam calls! OpenBlockBG is a community-driven project. 
 
 ## How to Add New Spam Numbers
 
@@ -11,9 +11,9 @@ Thank you for helping protect people from spam calls!
    ```
 
 3. **Number formats accepted:**
-   - Mobile: `087123456`, `088123456`, `089123456`
-   - Landline: `02XXXXXXX` (Sofia), `032XXXXXX` (Plovdiv), etc.
-   - International: `+359XXXXXXXX`
+   - Bulgarian Mobile: `087123456`, `088123456`, `089123456`
+   - Bulgarian Landline: `02XXXXXXX` (Sofia), `032XXXXXX` (Plovdiv), etc.
+   - International: `+1234567890`, `+44123456789`, `+359XXXXXXXX`
 
 4. **Run the generator:**
    ```bash
@@ -32,7 +32,7 @@ Thank you for helping protect people from spam calls!
 
 - **Verify the number** is actually spam before adding
 - **Add a comment** describing the spam type if possible
-- **Use proper format** - the script validates Bulgarian phone numbers
+- **Use proper format** - the script validates phone numbers (Bulgarian and international)
 - **Don't add personal numbers** or numbers you're unsure about
 - **One number per line** in the text file
 

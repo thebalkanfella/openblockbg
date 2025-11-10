@@ -1,8 +1,12 @@
-# Bulgarian Spam Numbers List
+# Spam Numbers List
 # Format: One phone number per line
-# Use Bulgarian format (e.g., 088888888 for mobile, 02XXXXXXX for landline)
+# 
+# Supported formats:
+# - Bulgarian: 088888888 (mobile), 02XXXXXXX (landline)
+# - International: +1234567890, +44123456789, etc.
+# - With formatting: +1 (555) 123-4567, +44 20 1234 5678
+# 
 # Add comments with # for spam type or date received
 
 # Example spam number (fake number for demonstration)
-088888888  # Fake lottery scam - November 2025
 029034100 # Fake scam 

@@ -1,13 +1,16 @@
-# Bulgarian Spam/Scam Phone Numbers
+# OpenBlockBG
 
-This project maintains a list of Bulgarian spam and scam phone numbers that can be imported into smartphones for blocking unwanted calls.
+**Open-source spam and scam phone number blocklist for Bulgaria and beyond.**
+
+This project maintains a community-driven list of spam and scam phone numbers that can be imported into smartphones for blocking unwanted calls.
 
 ## Features
 
 - 📱 VCF (vCard) file format for easy import
-- 🇧🇬 Focused on Bulgarian spam numbers
+- 🇧🇬 Focused on Bulgarian market with international support
 - 📞 Compatible with iPhone and Android
-- 🔄 Regular updates with new spam numbers
+- 🔄 Regular community-driven updates
+- 🔓 Fully open-source and transparent
 
 ## Files
 
@@ -39,10 +42,11 @@ This project maintains a list of Bulgarian spam and scam phone numbers that can 
 
 ## Format
 
-Numbers should be in Bulgarian format:
-- Mobile: 088888888 (example spam number)
-- Landline: 02XXXXXXX
-- International: +359XXXXXXXX
+Supported number formats:
+- Bulgarian Mobile: 088888888, 087123456, 089123456
+- Bulgarian Landline: 02XXXXXXX (Sofia), 032XXXXXX (Plovdiv)
+- International: +1234567890, +44123456789, +359XXXXXXXX
+- With formatting: +1 (555) 123-4567 (spaces and symbols will be cleaned)
 
 ## Contributing
 
