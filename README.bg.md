@@ -16,14 +16,14 @@
 ## Бърз старт
 
 ### Импортиране в iPhone
-1. Изтеглете [`blocked_contacts.vcf`](blocked_contacts.vcf)
+1. Изтеглете последната версия на [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Отворете файла на вашия iPhone
 3. Натиснете "Добави контакт"
 4. Отидете в Настройки → Телефон → Блокирани контакти
 5. Добавете контакта "OpenBlockBG" към списъка с блокирани
 
 ### Импортиране в Android
-1. Изтеглете [`blocked_contacts.vcf`](blocked_contacts.vcf)
+1. Изтеглете последната версия на [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Отворете приложението Контакти
 3. Меню → Импортиране
 4. Изберете VCF файла

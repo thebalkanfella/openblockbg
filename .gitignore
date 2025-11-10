@@ -23,5 +23,4 @@ Thumbs.db
 *.tmp
 *.bak
 
-# Don't ignore the generated VCF file - we want to commit it
-# !blocked_contacts.vcf
+blocked_contacts.vcf

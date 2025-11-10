@@ -9,41 +9,31 @@ This project maintains a community-driven list of spam and scam phone numbers th
 
 ## 📥 Download
 
-**[⬇️ Download blocked_contacts.vcf](blocked_contacts.vcf)**
+**[⬇️ Download blocked_contacts.vcf](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)**
 
 Import this file to your phone to block all spam numbers in the list.
 
 ## Quick start
 
+  ### How to use:
+
+
+
 ### Import to iPhone
-1. Download [`blocked_contacts.vcf`](blocked_contacts.vcf)
+1. Download [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Open the file on your iPhone
 3. Tap "Add Contact"
 4. Go to Settings → Phone → Blocked Contacts
-5. Add the "OpenBlockBG" contact to blocked list
+5. Block the "OpenBlockBG" contact
+
 
 ### Import to Android
-1. Download [`blocked_contacts.vcf`](blocked_contacts.vcf)
+1. Download [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Open Contacts app
 3. Menu → Import
 4. Select the VCF file
 5. Go to Phone → Settings → Blocked Numbers
-6. Add the "OpenBlockBG" contact to blocked list
-
-
-## Features
-
-- 📱 VCF (vCard) file format for easy import
-- 🇧🇬 Focused on Bulgarian market with international support
-- 📞 Compatible with iPhone and Android
-- 🔄 Regular community-driven updates
-- 🔓 Fully open-source and transparent
-
-## Files
-
-- [`spam_numbers.txt`](spam_numbers.txt) - Plain text list of spam phone numbers
-- [`blocked_contacts.vcf`](blocked_contacts.vcf) - VCF file ready for import
-- [`generate_vcf.py`](generate_vcf.py) - Script to generate VCF from the number list
+6. Block the "OpenBlockBG" contact
 
 ## Format
 
