@@ -1,0 +1,50 @@
+# Contributing to Bulgarian Spam Numbers
+
+Thank you for helping protect people from spam calls! 
+
+## How to Add New Spam Numbers
+
+1. **Fork the repository**
+2. **Add the spam number** to `spam_numbers.txt` in the correct format:
+   ```
+   088123456  # Description of spam type - Date received
+   ```
+
+3. **Number formats accepted:**
+   - Mobile: `087123456`, `088123456`, `089123456`
+   - Landline: `02XXXXXXX` (Sofia), `032XXXXXX` (Plovdiv), etc.
+   - International: `+359XXXXXXXX`
+
+4. **Run the generator:**
+   ```bash
+   python generate_vcf.py
+   ```
+
+5. **Commit both files:**
+   ```bash
+   git add spam_numbers.txt blocked_contacts.vcf
+   git commit -m "Add spam number: 088123456"
+   ```
+
+6. **Create a pull request**
+
+## Guidelines
+
+- **Verify the number** is actually spam before adding
+- **Add a comment** describing the spam type if possible
+- **Use proper format** - the script validates Bulgarian phone numbers
+- **Don't add personal numbers** or numbers you're unsure about
+- **One number per line** in the text file
+
+## Common Spam Types in Bulgaria
+
+- Fake lottery/prize scams
+- Bank/credit card scams  
+- Insurance sales calls
+- Fake technical support
+- Survey scams
+- Robocalls
+
+## Questions?
+
+Open an issue if you need help or have questions about contributing.
