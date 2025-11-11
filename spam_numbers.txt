@@ -8,8 +8,8 @@
 # 
 # Add comments with # for spam type or date received
 
-# Example spam number (fake number for demonstration)
-029034100 # Fake scam 
+# Current list:
+029034100 # AI voice. Colagen and joints medicine promo
 +35924963324 # Survey spam
 +35924374737
 +359896610426
@@ -22,5 +22,20 @@
 +359892051561
 +34951748372
 +35924373926
-+35929034100
 +359886310285 # Health events invites
++359886097012 # Asking where you live
++359886097053 # Asking where you live
++35929036500 # 
++35929041500 # Universities surveying. They promise a tablet as a gift :D
++35924373728 
++359 88 320 6437
++359 88 320 6453
++359 88 633 2436
++359 88 633 0127
++359 88 633 1146
++359 2 903 6400 # "Health" products
++359 88 6028766
+0886340395 # Joints treatment
+0886346709 # Joints treatment
+0886317925 # Joints treatment
+0884329998 # Selling useless shit over the phone and scaming people into taking loans
