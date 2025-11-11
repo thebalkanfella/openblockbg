@@ -3,7 +3,7 @@
 [![English](https://img.shields.io/badge/lang-English-blue.svg)](README.md)
 [![Български](https://img.shields.io/badge/lang-Български-red.svg)](README.bg.md)
 
-**Open-source spam and scam phone number blocklist for Bulgaria and beyond.**
+**Curated list of spam and scam phone numbers for Bulgaria.**
 
 This project maintains a community-driven list of spam and scam phone numbers that can be imported into smartphones for blocking unwanted calls.
 
@@ -15,11 +15,7 @@ Import this file to your phone to block all spam numbers in the list.
 
 ## Quick start
 
-  ### How to use:
-
-
-
-### Import to iPhone
+### iPhone instructions
 1. Download [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Open the file on your iPhone
 3. Tap "Add Contact"
@@ -27,7 +23,7 @@ Import this file to your phone to block all spam numbers in the list.
 5. Block the "OpenBlockBG" contact
 
 
-### Import to Android
+### Android instructions
 1. Download [`blocked_contacts.vcf`](https://github.com/thebalkanfella/openblockbg/releases/latest/download/blocked_contacts.vcf)
 2. Open Contacts app
 3. Menu → Import
@@ -54,7 +50,7 @@ To add a number:
 2. Include: phone number, description, and date
 3. Submit a pull request
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for detailed guidelines.
 
 ## Legal Notice
 
