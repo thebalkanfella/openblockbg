@@ -5,7 +5,7 @@ Thank you for helping protect people from spam calls! OpenBlockBG is a community
 ## How to Add New Spam Numbers
 
 1. **Fork the repository**
-2. **Add the spam number** to `spam_numbers.txt` in the correct format:
+2. **Add the spam number** to `spam_numbers.md` in the correct format:
    ```
    088123456  # Description of spam type - Date received
    ```
@@ -15,14 +15,9 @@ Thank you for helping protect people from spam calls! OpenBlockBG is a community
    - Bulgarian Landline: `02XXXXXXX` (Sofia), `032XXXXXX` (Plovdiv), etc.
    - International: `+1234567890`, `+44123456789`, `+359XXXXXXXX`
 
-4. **Run the generator:**
+5. **Commit the file:**
    ```bash
-   python generate_vcf.py
-   ```
-
-5. **Commit both files:**
-   ```bash
-   git add spam_numbers.txt blocked_contacts.vcf
+   git add spam_numbers.md
    git commit -m "Add spam number: 088123456"
    ```
 
