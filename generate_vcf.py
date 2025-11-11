@@ -2,7 +2,7 @@
 """
 OpenBlockBG - VCF Generator for Spam Numbers
 
-This script reads spam phone numbers from spam_numbers.txt and generates
+This script reads spam phone numbers from spam_numbers.md and generates
 a VCF (vCard) file that can be imported into smartphones for blocking.
 Supports both Bulgarian and international phone numbers.
 """
@@ -10,22 +10,39 @@ Supports both Bulgarian and international phone numbers.
 import re
 from datetime import datetime
 
-def read_spam_numbers(filename='spam_numbers.txt'):
-    """Read spam numbers from text file, ignoring comments and empty lines."""
+def read_spam_numbers(filename='spam_numbers.md'):
+    """Read spam numbers from markdown file, extracting from table format."""
     numbers = []
     try:
         with open(filename, 'r', encoding='utf-8') as file:
+            in_table = False
             for line_num, line in enumerate(file, 1):
-                # Remove comments and whitespace
-                line = line.split('#')[0].strip()
-                if not line:
+                line = line.strip()
+                
+                # Detect table start/end
+                if line.startswith('|') and '---' in line:
+                    in_table = True
                     continue
                 
-                # Validate phone number format
-                if is_valid_phone_number(line):
-                    numbers.append(line)
-                else:
-                    print(f"Warning: Invalid number format on line {line_num}: {line}")
+                # Skip non-table lines
+                if not in_table or not line.startswith('|'):
+                    continue
+                
+                # Parse table row
+                parts = [p.strip() for p in line.split('|')]
+                if len(parts) >= 2 and parts[1]:  # Has phone number column
+                    phone = parts[1].strip()
+                    
+                    # Skip header row
+                    if phone.lower() in ['phone number', 'number']:
+                        continue
+                    
+                    # Validate and add phone number
+                    if is_valid_phone_number(phone):
+                        numbers.append(phone)
+                    else:
+                        print(f"Warning: Invalid number format on line {line_num}: {phone}")
+    
     except FileNotFoundError:
         print(f"Error: {filename} not found!")
         return []

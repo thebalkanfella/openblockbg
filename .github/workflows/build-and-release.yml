@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'spam_numbers.txt'
+      - 'spam_numbers.md'
   workflow_dispatch:
 
 permissions:
@@ -34,7 +34,7 @@ jobs:
       - name: Get spam count
         id: count
         run: |
-          COUNT=$(grep -v '^#' spam_numbers.txt | grep -v '^$' | wc -l)
+          COUNT=$(grep -v '^#' spam_numbers.md | grep -v '^$' | wc -l)
           echo "count=$COUNT" >> $GITHUB_OUTPUT
           echo "Found $COUNT spam numbers"
       
@@ -69,7 +69,7 @@ jobs:
             🇧🇬 [Прочети на Български](https://github.com/${{ github.repository }}/blob/main/README.bg.md)
           files: |
             blocked_contacts.vcf
-            spam_numbers.txt
+            spam_numbers.md
           draft: false
           prerelease: false
           make_latest: true

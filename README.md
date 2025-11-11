@@ -45,10 +45,14 @@ Supported number formats:
 
 ## Contributing
 
-Feel free to submit pull requests with new spam numbers. Please include:
-- The spam phone number
-- Brief description of the spam type (if known)
-- Date when you received the spam call
+Feel free to submit pull requests with new spam numbers. 
+
+**📋 [View/Edit Spam Numbers List](spam_numbers.md)**
+
+To add a number:
+1. Edit [`spam_numbers.md`](spam_numbers.md) and add a row to the table
+2. Include: phone number, description, and date
+3. Submit a pull request
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
