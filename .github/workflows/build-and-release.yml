@@ -34,7 +34,7 @@ jobs:
       - name: Get spam count
         id: count
         run: |
-          COUNT=$(grep -v '^#' spam_numbers.md | grep -v '^$' | wc -l)
+          COUNT=$(grep -E '^\|[[:space:]]*[0-9+]' spam_numbers.md | grep -v 'Phone Number' | wc -l)
           echo "count=$COUNT" >> $GITHUB_OUTPUT
           echo "Found $COUNT spam numbers"
       
