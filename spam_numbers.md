@@ -42,9 +42,13 @@ Add one phone number per line in the table below. Supported formats:
 | 0886346709 | Joints treatment | 2025-11-10 |
 | 0886317925 | Joints treatment | 2025-11-10 |
 | 0884329998 | Selling useless products and scamming people into taking loans | 2025-11-10 |
+| +359875312009 | Vivacom Upsell Spam | 2026-02-02 |
+| +359865316370 | Vivacom Upsell Spam | 2026-02-02 |
+
 
 ## How to Add Numbers
 
 1. Add a new row to the table above
 2. Include the phone number, description, and date
 3. Submit a pull request
+
