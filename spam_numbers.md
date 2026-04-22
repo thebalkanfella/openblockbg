@@ -45,6 +45,14 @@ Add one phone number per line in the table below. Supported formats:
 | +359875312009 | Vivacom Upsell Spam | 2026-02-02 |
 | +359865316370 | Vivacom Upsell Spam | 2026-02-02 |
 | 0886310386 | raffle spam | 2026-02-02 |
+| +359886310495 | Unknown spam | 2026-04-06 |
+| +359886311043 | Unknown spam | 2026-04-06 |
+| +359886311979 | Unknown spam | 2026-04-06 |
+| +359886310285 | Unknown spam | 2026-04-06 |
+| +359886310840 | AI voice, starts with "Здравейте, казвам се Петя и ...", invites to some kitchen supplies expo with a kitchen knives set reward  | 2026-04-20 |
+| +359886309846 | AI voice, starts with "Здравейте, казвам се Петя и ...", invites to some kitchen supplies expo with a kitchen knives set reward  | 2026-04-21 |
+| +359886315820 | AI voice, starts with "Здравейте, казвам се Петя и ...", invites to some kitchen supplies expo with a kitchen knives set reward  | 2026-04-22 |
+
 
 ## How to Add Numbers
 
