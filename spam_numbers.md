@@ -45,6 +45,7 @@ Add one phone number per line in the table below. Supported formats:
 | +359875312009 | Vivacom Upsell Spam | 2026-02-02 |
 | +359865316370 | Vivacom Upsell Spam | 2026-02-02 |
 | 0886310386 | raffle spam | 2026-02-02 |
+| +359884220382 | indian call center | 2026-04-29 |
 
 ## How to Add Numbers
 
